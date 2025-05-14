@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Edurise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styleadmin.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <header class="top-header d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">EDURISE ADMIN</h4>
+        <div><i data-lucide="user-circle" class="lucide me-2"></i></div>
+    </header>
+
+    <nav class="sidebar d-flex flex-column p-3">
+        <h5 class="mb-4">Menu</h5>
+        <a href="#" class="nav-link"><i data-lucide="layout-dashboard" class="lucide me-2"></i>Dashboard</a>
+        <a href="#" class="nav-link"><i data-lucide="bar-chart-3" class="lucide me-2"></i>Analytics</a>
+        <a href="#" class="nav-link"><i data-lucide="help-circle" class="lucide me-2"></i>Helpdesk</a>
+        <a href="#" class="nav-link"><i data-lucide="monitor" class="lucide me-2"></i>Monitoring</a>
+        <hr class="text-white" />
+        <a href="#" class="nav-link">Scholarship Hub</a>
+        <a href="#" class="nav-link">Eduprep Tools</a>
+        <a href="#" class="nav-link">Edu Event</a>
+        <a href="#" class="nav-link">Edu Connect</a>
+        <a href="#" class="nav-link">User Settings</a>
+        <a href="#" class="nav-link">Settings</a>
+    </nav>
+
+    <main class="main-content">
+        <!-- Statistic Cards -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Total Scholarship</h6>
+                        <h4>54</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Total CV Downloaded</h6>
+                        <h4>1001</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Total Users</h6>
+                        <h4>1128</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Total Mentor</h6>
+                        <h4>102</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data User Table -->
+        <section class="mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Data User</strong>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        ⚠️ Selalu Periksa Status Beasiswa dari Tiap User, dan Teliti Saat Merubah Data!
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Nama/Username</th>
+                                    <th>Email</th>
+                                    <th>Status Beasiswa</th>
+                                    <th>Perubahan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dian Oslo</td>
+                                    <td>yanzinvoker123@gmail.com</td>
+                                    <td>Diterima</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary"><i data-lucide="edit"
+                                                class="lucide"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i data-lucide="trash"
+                                                class="lucide"></i></button>
+                                    </td>
+                                </tr>
+                                <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
